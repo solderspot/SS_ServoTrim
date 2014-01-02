@@ -4,7 +4,7 @@ ServoTrim is a companion library to [**SS_Servorator**](https://github.com/solde
 
 It is a very simple, even trivial library class. Its main purpose is to manage servo pulse timings for one or more servos. It also provides the ability to dynamically assign a number and associate data with each servo. 
 
-ServoTrim's real usefulness is when one has to manage multiple servos in a systematic way.
+ServoTrim's real usefulness is when you have to manage multiple servos in a systematic way, or you have multiple servo related projects and you wish to reuse as much code as possible.
 
 ##How it Works
 
