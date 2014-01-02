@@ -90,7 +90,7 @@ If we modify or setServoAngle() function so:
 
 We can use setServoNumber() to map 'index' to a different physical servo.
 
-Servo numbers default to -1;
+By default servo numbers are set to -1;
  
 ##Associating Data With Servos
  
@@ -112,5 +112,5 @@ You could use these function to do servo mapping too:
 		}
 	}
 	
-Servo data defaults to NULL.  	
+By default servo data is set to NULL.  	
    

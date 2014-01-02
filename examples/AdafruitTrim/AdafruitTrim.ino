@@ -1,6 +1,6 @@
 //
 //  
-//  ServoTrim.ino
+//  AdafruitTrim.ino
 //
 // Copyright (c) 2014, Solder Spot
 // All rights reserved. 
@@ -15,7 +15,7 @@
 #include <SS_ServoTrim.h>
 
 
-#define NUM_SERVOS 6
+#define NUM_SERVOS 16
 
 // create the servo driver instance
 // change 0x40 to match your servo shield if necessary
@@ -74,16 +74,9 @@ void setServoAngle( int index, long angle)
     // 4096 ticks is 20,000 us (50Hz)
     long time = trim.getServoPulseTime(index, SS_DEGREES(angle));
     long ticks = (4096L*time)/20000L;
-    // update the servo channel with the new pusle
+    // update the servo channel with the new pusle width
     pwm.setPWM(index, 0, ticks);
 
-    Serial.print("servo[");
-    Serial.print(index);
-    Serial.print("] ");
-    Serial.print(angle);
-    Serial.print(" is ");
-    Serial.print(time);
-    Serial.println(" us");
   }
 }
 
